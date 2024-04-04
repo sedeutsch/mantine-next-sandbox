@@ -1,0 +1,21 @@
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 240px;
+  padding: 0.5rem;
+}
+
+.dayNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  /* background-color: red; */
+  /* border: 1px dotted red; */
+  border-radius: 100%;
+  text-align: center;
+}

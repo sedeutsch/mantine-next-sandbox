@@ -1,11 +1,14 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { MantineProvider } from '@mantine/core';
+import SidePanel from '../components/SidePanel';
+import Calendar from '../components/Calendar';
+import TopBar from '../components/TopBar';
 
-export default function HomePage() {
+export default function App() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <MantineProvider>
+      <TopBar />
+      <Calendar />
+      <SidePanel />
+    </MantineProvider>
   );
 }
