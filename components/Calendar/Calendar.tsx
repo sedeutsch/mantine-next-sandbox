@@ -1,5 +1,6 @@
 import { Button, Title } from '@mantine/core';
 import Day from '../Day';
+import Assignments from '../Assignments';
 import styles from './Calendar.module.css';
 
 export const Calendar = () => (
@@ -25,7 +26,11 @@ export const Calendar = () => (
         <Day dayNumber="30" />
         <Day dayNumber="31" />
         <Day dayNumber="1" />
-        <Day dayNumber="2" />
+        <Day dayNumber="2">
+          <Assignments>Tackling Science Questions</Assignments>
+          <Assignments>Consciousness</Assignments>
+          <Assignments>Nucleophilic Substitution</Assignments>
+        </Day>
         <Day dayNumber="3" />
         <Day dayNumber="4" />
       </div>

@@ -1,0 +1,26 @@
+.assignment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  background-color: #62bdeb;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.icon {
+  width: 17px;
+  height: 16px;
+}
+
+.assignmentTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 115%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 160px;
+}
