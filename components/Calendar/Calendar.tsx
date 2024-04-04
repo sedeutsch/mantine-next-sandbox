@@ -1,17 +1,25 @@
-import { Button } from '@mantine/core';
+import { Button, Title } from '@mantine/core';
 import Day from '../Day';
 import styles from './Calendar.module.css';
 
 export const Calendar = () => (
   <div className={styles.calendar}>
     <div className={styles.calendarHeader}>
-      <h3>April 2024</h3>
+      <Title order={3}>April 2024</Title>
       <Button size="sm" radius="md">
         Add
       </Button>
     </div>
     <div className={styles.calendarRows}>
-      <div className={styles.calendarWeek}>Sun Mon Tue Wed Thu Fri Sat</div>
+      <div className={styles.calendarWeek}>
+        <div className={styles.calendarDayOfWeek}>Sun</div>
+        <div className={styles.calendarDayOfWeek}>Mon</div>
+        <div className={styles.calendarDayOfWeek}>Tue</div>
+        <div className={styles.calendarDayOfWeek}>Wed</div>
+        <div className={styles.calendarDayOfWeek}>Thu</div>
+        <div className={styles.calendarDayOfWeek}>Fri</div>
+        <div className={styles.calendarDayOfWeek}>Sat</div>
+      </div>
       <div className={styles.calendarRow}>
         <Day dayNumber="29" />
         <Day dayNumber="30" />
