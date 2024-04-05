@@ -6,9 +6,11 @@ interface DayProps {
   children?: React.ReactNode;
 }
 
-export const Day: React.FC<DayProps> = ({ dayNumber, children }) => (
-  <div className={styles.day}>
-    <div className={styles.dayNumber}>{dayNumber}</div>
-    <div className={styles.assignments}>{children}</div>
-  </div>
-);
+export const Day: React.FC<DayProps> = ({ dayNumber, children }) => {
+  return (
+    <div className={styles.day}>
+      <div className={styles.dayNumber}>{dayNumber}</div>
+      <div className={styles.assignments}>{children}</div>
+    </div>
+  );
+};

@@ -1,22 +1,24 @@
-import { MantineProvider, Container } from '@mantine/core';
+import { useState } from 'react';
+import { MantineProvider, Flex, Stack } from '@mantine/core';
 import SidePanel from '../components/SidePanel';
 import Calendar from '../components/Calendar';
 import TopBar from '../components/TopBar';
 import { theme } from './theme';
-import './styles.css';
 
 export default function App() {
+  // const [isOpen, setIsOpen] = useState(true);
+  // onClick={() => setIsOpen(!isOpen)}
+  // style={{ width: isOpen ? '320px' : '0px' }}
+
   return (
     <MantineProvider theme={theme}>
-      <div className="app">
-        <div className="content">
+      <Flex>
+        <Stack w="100%" gap="xl">
           <TopBar />
-          <Container px={32} size="90rem">
-            <Calendar />
-          </Container>
-        </div>
+          <Calendar />
+        </Stack>
         <SidePanel />
-      </div>
+      </Flex>
     </MantineProvider>
   );
 }
