@@ -2,10 +2,10 @@ import React from 'react';
 import styles from './Assignments.module.css';
 
 interface AssignmentsProps {
-  children: string;
+  title?: string;
 }
 
-export const Assignments: React.FC<AssignmentsProps> = ({ children }) => (
+export const Assignments: React.FC<AssignmentsProps> = ({ title }) => (
   <div className={styles.assignment}>
     <div className={styles.icon}>
       <svg
@@ -38,6 +38,6 @@ export const Assignments: React.FC<AssignmentsProps> = ({ children }) => (
         </g>
       </svg>
     </div>
-    <div className={styles.assignmentTitle}>{children}</div>
+    <div className={styles.assignmentTitle}>{title}</div>
   </div>
 );

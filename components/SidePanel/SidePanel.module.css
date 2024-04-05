@@ -1,12 +1,21 @@
 .sidePanel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 320px;
-  background-color: #ecefe0;
-  padding: 24px;
+  background-color: #ffffff;
   box-sizing: border-box;
-  display: none;
+  border-left: 1px solid #eaecf0;
+}
+
+.sidePanelHeader {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid #eaecf0;
+  padding: 16px;
+}
+
+.sidePanelContent {
+  padding: 16px;
 }

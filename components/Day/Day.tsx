@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Day.module.css';
 
 interface DayProps {
-  dayNumber: string;
-  children: string;
+  dayNumber?: string;
+  children?: React.ReactNode;
 }
 
 export const Day: React.FC<DayProps> = ({ dayNumber, children }) => (

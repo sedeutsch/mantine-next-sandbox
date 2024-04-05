@@ -22,44 +22,70 @@ export const Calendar = () => (
         <div className={styles.calendarDayOfWeek}>Sat</div>
       </div>
       <div className={styles.calendarRow}>
-        <Day dayNumber="29" />
-        <Day dayNumber="30" />
-        <Day dayNumber="31" />
-        <Day dayNumber="1" />
+        <Day dayNumber="29"></Day>
+        <Day dayNumber="30"></Day>
+        <Day dayNumber="31"></Day>
+        <Day dayNumber="1"></Day>
         <Day dayNumber="2">
-          <Assignments>Tackling Science Questions</Assignments>
-          <Assignments>Consciousness</Assignments>
-          <Assignments>Nucleophilic Substitution</Assignments>
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Consciousness" />
+          <Assignments title="Nucleophilic Substitution" />
         </Day>
-        <Day dayNumber="3" />
-        <Day dayNumber="4" />
+        <Day dayNumber="3"></Day>
+        <Day dayNumber="4">
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
       </div>
       <div className={styles.calendarRow}>
-        <Day dayNumber="5" />
-        <Day dayNumber="6" />
-        <Day dayNumber="7" />
-        <Day dayNumber="8" />
-        <Day dayNumber="9" />
-        <Day dayNumber="10" />
-        <Day dayNumber="11" />
+        <Day dayNumber="5"></Day>
+        <Day dayNumber="6">
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="7"></Day>
+        <Day dayNumber="8">
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="9">
+          <Assignments title="Consciousness" />
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="10">
+          <Assignments title="Tackling Science Questions" />
+        </Day>
+        <Day dayNumber="11"></Day>
       </div>
       <div className={styles.calendarRow}>
-        <Day dayNumber="12" />
-        <Day dayNumber="13" />
-        <Day dayNumber="14" />
-        <Day dayNumber="15" />
-        <Day dayNumber="16" />
-        <Day dayNumber="17" />
-        <Day dayNumber="18" />
+        <Day dayNumber="12">
+          <Assignments title="Tackling Science Questions" />
+        </Day>
+        <Day dayNumber="13"></Day>
+        <Day dayNumber="14">
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="15">
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="16">
+          <Assignments title="Nucleophilic Substitution" />
+        </Day>
+        <Day dayNumber="17">
+          <Assignments title="Tackling Science Questions" />
+          <Assignments title="Tackling Science Questions" />
+        </Day>
+        <Day dayNumber="18"></Day>
       </div>
       <div className={styles.calendarRow}>
-        <Day dayNumber="19" />
-        <Day dayNumber="20" />
-        <Day dayNumber="21" />
-        <Day dayNumber="22" />
-        <Day dayNumber="23" />
-        <Day dayNumber="24" />
-        <Day dayNumber="25" />
+        <Day dayNumber="19"></Day>
+        <Day dayNumber="20"></Day>
+        <Day dayNumber="21"></Day>
+        <Day dayNumber="22"></Day>
+        <Day dayNumber="23"></Day>
+        <Day dayNumber="24"></Day>
+        <Day dayNumber="25"></Day>
       </div>
     </div>
   </div>
